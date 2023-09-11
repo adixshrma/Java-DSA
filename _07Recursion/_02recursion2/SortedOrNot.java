@@ -1,4 +1,4 @@
-package _08recursion2;
+package _07Recursion._02recursion2;
 
 public class SortedOrNot {
     public static void main(String[] args) {

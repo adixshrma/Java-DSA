@@ -1,4 +1,4 @@
-package _07recursion1;
+package _07Recursion._01recursion1;
 
 // no of steps to reduce a number to zero LeetCode 1342.
 

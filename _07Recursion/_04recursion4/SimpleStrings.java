@@ -1,4 +1,4 @@
-package _10recursion4;
+package _07Recursion._04recursion4;
 
 public class SimpleStrings {
     public static void main(String[] args) {

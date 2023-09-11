@@ -1,4 +1,4 @@
-package _10recursion4;
+package _07Recursion._04recursion4;
 import java.util.ArrayList;
 
 public class SubSeq {

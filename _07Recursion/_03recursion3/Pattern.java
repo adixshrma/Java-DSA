@@ -1,4 +1,4 @@
-package _09recursion3;
+package _07Recursion._03recursion3;
 
 public class Pattern {
     public static void main(String[] args) {
