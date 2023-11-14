@@ -1,4 +1,4 @@
-package _02Arrays;
+package _02Arrays.questions;
 
 public class MaxWater2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package _02Arrays;
+package _02Arrays.questions;
 
 // its giving corrrect ans but time limit is exceeded... Find a way to reduce time complexity...
 
