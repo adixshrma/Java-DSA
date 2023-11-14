@@ -5,10 +5,12 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {9,8,7,5,3,2,1};
-//        mergeSort1(arr, 0, arr.length);
-//        System.out.println(Arrays.toString(arr));
-        int[] ans = mergeSort(arr);
-        System.out.println(Arrays.toString(ans));
+
+//        int[] ans = mergeSort(arr);                   // this creates new array.
+//        System.out.println(Arrays.toString(ans));
+
+        mergeSort1(arr, 0, arr.length);                // this is inline sorting.
+        System.out.println(Arrays.toString(arr));
     }
     static int[] mergeSort(int[] arr){
         if(arr.length == 1){
@@ -50,14 +52,15 @@ public class MergeSort {
     }
 
     static void mergeSort1(int[] arr, int s, int e){        // in line sorting
-        if(e - s == 1){
+        if(e - s == 1){     // this means only one element is left.
             return;
         }
-        int m = (s+e)/2;
-        mergeSort1(arr, s, m);
-        mergeSort1(arr, m, e);
+            int m = (s + e) / 2;
+            mergeSort1(arr, s, m);
+            mergeSort1(arr, m, e);
 
-        merge1(arr, s, m, e);
+            merge1(arr, s, m, e);
+
     }
 
     private static void merge1(int[] arr, int s, int m, int e) {
@@ -76,7 +79,7 @@ public class MergeSort {
             }
             k++;
         }
-        // it may be possible that any one of array contain more elements than other.
+        // it may be possible that any one of array contain more elements than other one.
         // hence we will put remaining in the mix array.
         while(i< m){
             mix[k] = arr[i];
